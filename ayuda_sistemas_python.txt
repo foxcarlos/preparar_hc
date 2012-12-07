@@ -1,0 +1,67 @@
+#Para el Sistema de SMS es necesario ejecutar en el equipo servidor una sola vez el comando:
+./adb start-server
+
+#Para Equipos Nuevos realizar los siguiente desde Consola:
+#Como suario normal crear la ruta del pythonpath de nuestras librerias
+export PYTHONPATH=$PYTHONPATH:/home/administrador/desarrollo/python
+
+#Como suario root
+aptitude install python-paramiko
+aptitude install python-setuptools
+aptitude install python-xlwt
+aptitude install python-psycopg2
+aptitude install fping
+aptitude install mplayer
+aptitude install python-matplotlib se utiliza para vizualizar las imagenes dicom
+
+easy_install tweepy
+easy_install dbf
+easy_install MplayerCtrl
+easy_install pydicom
+
+copiar el archivo android.py en la siguiente ruta:
+
+ /usr/local/lib/python2.6/dist-packages
+/usr/local/lib/python2.7/dist-packages
+
+#Como usuario root
+#Se deben crear las carpetas para los servidores que se desen monitoriar su espacio en disco donde se realizaran los puntos de montaje Ej:
+mkdir /media/serv_coromoto
+mkdir /media/publico
+mkdir /media/publico/hc4
+mkdir /media/publico/hc2
+mkdir /media/serv_resp_noche
+mkdir /media/serv_resp_tarde
+mkdir /media/serv_resp_hc2
+
+
+#Como usuario root
+crear o editar el archivo smbcredentials
+nano /root/.smbcredentials
+Y Colocar lo siguiente:
+username=canaima
+password=canaima2
+
+#Como Usuario root
+aptitude install smbclient
+aptitude install cifs-utils
+
+
+#Como usuario root
+#El /etc/fstab debe estar de la siguiente manera.
+#nota: es necesario que el pc resuelva por nombre , para mayor inf. ver el archivo /etc/fstab
+
+#copiar esto tal cual en el fstab.
+#NOTA: si genera error al montarlos, se debe cambiar "smbfs" por "cifs"
+ 
+//serv_coromoto/shc  /media/serv_coromoto  smbfs  credentials=/root/.smbcredentials,dir_mode=0777,file_mode=0777  0  0
+//publico/hc4/  /media/publico/hc4  smbfs  credentials=/root/.smbcredentials,dir_mode=0777,file_mode=0777  0  0
+//publico/hc2/  /media/publico/hc2  smbfs  credentials=/root/.smbcredentials,dir_mode=0777,file_mode=0777  0  0
+//serv_resp_noche/respaldonoche/ /media/serv_resp_noche smbfs  credentials=/root/.smbcredentials,dir_mode=0777,file_mode=0777  0  0
+//serv_resp_tarde/respaldotarde/ /media/serv_resp_tarde smbfs  credentials=/root/.smbcredentials,dir_mode=0777,file_mode=0777  0  0
+//serv_resp_hc2/respaldohc2 /media/serv_resp_hc2 smbfs  credentials=/root/.smbcredentials,dir_mode=0777,file_mode=0777  0  0
+
+
+
+#para ejecutar una tarea de crontab 
+python /home/administrador/desarrollo/python/pycondor/pycondor.py
