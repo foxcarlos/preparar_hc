@@ -10,6 +10,7 @@ aptitude install libespeak-dev espeak
 #para ZMQ
 aptitude install libzmq-dev python-zmq
 aptitude install python-pygame
+aptitude install htop
 
 easy_install pyttsx
 easy_install tweepy 
