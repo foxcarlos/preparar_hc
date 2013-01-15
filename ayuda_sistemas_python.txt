@@ -65,3 +65,6 @@ aptitude install cifs-utils
 
 #para ejecutar una tarea de crontab 
 python /home/administrador/desarrollo/python/pycondor/pycondor.py
+
+#instalar como administrador de ventanas en debian xfce slim
+#http://manualinux.heliohost.org/slim.html
