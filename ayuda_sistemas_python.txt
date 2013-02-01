@@ -68,3 +68,14 @@ python /home/administrador/desarrollo/python/pycondor/pycondor.py
 
 #instalar como administrador de ventanas en debian xfce slim
 #http://manualinux.heliohost.org/slim.html
+
+#instalar guest additions de vbox en debian
+montar el guestadditions.iso
+ejecutar el archivo .run
+si genera error verificar e instalar en debian lo siguiente:
+aptitude install dkms
+apt-get install build-essential module-assistant
+como root m-a prepare
+si no funciona esto ejecutar
+apt-get install gcc linux-headers-$(uname -r) make
+

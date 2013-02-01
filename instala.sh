@@ -7,6 +7,8 @@ aptitude install python-matplotlib
 aptitude install python-wxgtk2.8
 #pyttsx depende de la  biblioteca libespeak-dev
 aptitude install libespeak-dev espeak
+aptitude install mbrola
+aptitude install mbrola-vz1
 #para ZMQ
 aptitude install libzmq-dev python-zmq
 aptitude install python-pygame
