@@ -5,6 +5,7 @@ aptitude install vim-gnome vim-python
 aptitude install mplayer 
 aptitude install python-matplotlib
 aptitude install python-wxgtk2.8 python-pip
+aptitude install python-daemon
 
 #pyttsx depende de la  biblioteca libespeak-dev
 aptitude install libespeak-dev espeak
