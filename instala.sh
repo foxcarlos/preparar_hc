@@ -22,6 +22,9 @@ aptitude install libzmq-dev python-zmq
 aptitude install python-pygame
 aptitude install htop
 
+#Modulo para espacio en discos
+aptitude install python-psutil
+
 easy_install pyttsx
 #easy_install tweepy 
 #easy_install dbf
