@@ -5,14 +5,14 @@ aptitude install xfce4 xfce4-goodies
 aptitude install iceweasel iceweasel-l10n-es-ar flashplugin-nonfree
 
 #Herramientas
-aptitude install gcalctool  clementine vlc smplayer smbclient cifs-utils git htop libespeak-dev espeak htop gimp file-roller vim-gnome vim-python mbrola mbrola-vz1 libreoffice terminator gnome-photo-printer gconf-editor cups system-config-printer
+aptitude install gcalctool  clementine vlc smplayer smbclient cifs-utils git htop libespeak-dev espeak htop gimp file-roller vim-gnome vim-python mbrola mbrola-vz1 libreoffice terminator gnome-photo-printer gconf-editor cups system-config-printer envince squeeze 
 
 #Virtualizador
 aptitude install virtualbox virtualbox-guest-additions-iso 
 
 #desarrollo
 #postgres y mysql
-aptitude install pgadmin3 emma
+aptitude install pgadmin3 emma qt4-designer arduino
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------
 #python
