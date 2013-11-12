@@ -12,7 +12,7 @@ aptitude install virtualbox virtualbox-guest-additions-iso
 
 #desarrollo
 #postgres y mysql
-aptitude install pgadmin3 emma qt4-designer pyqt4-dev-tools arduino python-pyside pyside-tools scratch squeak-plugins-scratch
+aptitude install pgadmin3 emma qt4-designer python-qt4 pyqt4-dev-tools arduino python-pyside pyside-tools scratch squeak-plugins-scratch
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------
 #python
