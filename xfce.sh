@@ -7,6 +7,13 @@ aptitude install iceweasel iceweasel-l10n-es-ar flashplugin-nonfree
 #Herramientas
 aptitude install gcalctool  clementine vlc smplayer smbclient cifs-utils git htop libespeak-dev espeak htop gimp file-roller vim-gnome vim-python mbrola mbrola-vz1 libreoffice terminator gnome-photo-printer gconf-editor cups system-config-printer envince squeeze gparted
 
+#Edicion de Video
+wget -q -O - http://www.bunkus.org/gpg-pub-moritzbunkus.txt | sudo apt-key add -
+echo deb http://www.bunkus.org/debian/wheezy/ ./ >> /etc/apt/sources.list
+echo deb-src http://www.bunkus.org/debian/wheezy/ ./ >> /etc/apt/sources.list
+aptitude update
+aptitude install mkvtoolnix mkvtoolnix-gui
+
 #Virtualizador
 aptitude install virtualbox virtualbox-guest-additions-iso 
 
