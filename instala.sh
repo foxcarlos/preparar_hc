@@ -8,6 +8,7 @@ aptitude install python-wxgtk2.8 python-pip
 aptitude install python-daemon
 aptitude install python-dbf
 aptitude install python-tweepy
+aptitude install python-bottle mongodb
 
 #pyttsx depende de la  biblioteca libespeak-dev
 aptitude install libespeak-dev espeak
