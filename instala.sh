@@ -34,6 +34,9 @@ easy_install pydicom
 #easy_install pygame
 #easy_install pyzmq
 
+#WebSocket
+pip install --proxy=10.121.6.12:8080 bottle-websocket
+
 cp android.py /usr/local/lib/python2.7/dist-packages/
 cp .smbcredentials /root/.smbcredentials
 
