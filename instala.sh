@@ -39,7 +39,9 @@ pip install --proxy=10.121.6.12:8080 bottle-websocket
 pip install websocket-client
 ptitude install python-gevent
 
-#
+#pdf para reportes
+pip install --proxy=10.121.6.12:8080 fpdf
+
 cp android.py /usr/local/lib/python2.7/dist-packages/
 cp .smbcredentials /root/.smbcredentials
 
