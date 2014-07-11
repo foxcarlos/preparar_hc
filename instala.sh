@@ -42,6 +42,11 @@ ptitude install python-gevent
 #pdf para reportes
 pip install --proxy=10.121.6.12:8080 fpdf
 
+#para capturar imagen desde una webcam
+aptitude install python-opencv
+aptitude install python-scipy
+pip install --proxy=10.121.6.12:8080 simplecv
+
 cp android.py /usr/local/lib/python2.7/dist-packages/
 cp .smbcredentials /root/.smbcredentials
 
