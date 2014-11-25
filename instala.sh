@@ -10,6 +10,9 @@ aptitude install python-dbf
 aptitude install python-tweepy
 aptitude install python-bottle mongodb
 
+#Descargar evoluspencil desde su web http://pencil.evolus.vn/Downloads.html
+dpkg -i --force-depends evoluspencil_2.0.5_all.deb
+
 #pyttsx depende de la  biblioteca libespeak-dev
 aptitude install libespeak-dev espeak
 
