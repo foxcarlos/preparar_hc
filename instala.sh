@@ -40,6 +40,7 @@ easy_install pydicom
 #WebSocket
 pip install --proxy=10.121.6.12:8080 bottle-websocket
 pip install websocket-client
+pip install bottle-websocket
 ptitude install python-gevent
 
 #pdf para reportes
