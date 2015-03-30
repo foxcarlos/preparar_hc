@@ -29,12 +29,37 @@ autocmd! bufwritepost .vimrc source %
 set pastetoggle=<F3>
 set clipboard=unnamed
 
+"let g:startify_custom_header = [
+let g:startify_custom_header = [
+\ '.',
+\ '',
+\ '                            (0 0)',
+\ '-----------------------oOO-- (_) ----oOO-------------------------',
+\ '__     ___             _____          ____           _           ',
+\ '\ \   / (_)_ __ ___   |  ___|____  __/ ___|__ _ _ __| | ___  ___ ',
+\ ' \ \ / /| |  _   _ \  | |_ / _ \ \/ / |   / _  |  __| |/ _ \/ __|',
+\ '  \ V / | | | | | | | |  _| (_) >  <| |__| (_| | |  | | (_) \__ \',
+\ '   \_/  |_|_| |_| |_| |_|  \___/_/\_\\____\__ _|_|  |_|\___/|___/',
+\ '',
+\ '',
+\ '-----------------------------------------------------------------',
+\ '                           |__|__|',
+\ '                            || || ',
+\ '                           ooO Ooo',
+\ '',
+\ ]
 
 " Mouse and backspace
 set mouse=a  " on OSX press ALT and click
 set bs=2     " make backspace behave like normal again
 
-
+let g:Powerline_symbols = "fancy"
+""let g:airline_left_sep=''
+""let g:airline_right_sep=''
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
 " Rebind <Leader> key
 " I like to have it here becuase it is easier to reach than the default and
 " it is next to ``m`` and ``n`` which I use for navigating between tabs.
