@@ -1,17 +1,12 @@
-aptitude install -y python-paramiko python-setuptools python-xlwt python-psycopg2 fping 
+aptitude install vim-youcompleteme powerline python-powerline fonts-powerline firmware-linux-nonfree
+aptitude install build-essential python-dev python-pip
+aptitude install python-psycopg2 fping 
 aptitude install -y smbclient cifs-utils 
 aptitude install -y git 
-aptitude install -y vim-gnome vim-python 
-aptitude install -y mplayer smplayer clementine
-aptitude install -y python-matplotlib
-aptitude install -y python-wxgtk2.8 python-pip
-aptitude install -y python-daemon
-aptitude install -y python-dbf
-aptitude install -y python-tweepy
-aptitude install -y python-bottle mongodb
+aptitude install -y mongodb
 
 #Descargar evoluspencil desde su web http://pencil.evolus.vn/Downloads.html
-dpkg -i --force-depends evoluspencil_2.0.5_all.deb
+#dpkg -i --force-depends evoluspencil_2.0.5_all.deb
 
 #pyttsx depende de la  biblioteca libespeak-dev
 aptitude -y install libespeak-dev espeak
@@ -23,7 +18,6 @@ aptitude -y install mbrola-vz1
 
 #para ZMQ
 aptitude install -y libzmq-dev python-zmq
-aptitude install -y python-pygame
 aptitude install -y htop
 
 #Modulo para espacio en discos
@@ -63,5 +57,5 @@ mkdir /media/serv_resp_tarde
 mkdir /media/serv_resp_hc2
 mkdir /media/respaldo_pg
 
-chown cgarcia:cgarcia /media/respaldo_pg
+#chown cgarcia:cgarcia /media/respaldo_pg
 

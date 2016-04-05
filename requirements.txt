@@ -1,0 +1,14 @@
+paramiko
+xlwt
+daemon
+dbf
+tweepy
+bottle
+pyzmq
+gevent
+scipy
+psutil
+pyttsx
+mplayerctrl
+pydicom
+
