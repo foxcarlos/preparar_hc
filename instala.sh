@@ -33,7 +33,7 @@ aptitude -y install mbrola-vz1
 
 #para ZMQ
 aptitude install -y libzmq-dev python-zmq
-
+aptitude install keepassx
 
 easy_install pyttsx
 #easy_install tweepy 
